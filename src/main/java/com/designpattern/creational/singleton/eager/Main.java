@@ -1,14 +1,14 @@
-package com.designpattern.creational.singleton;
+package com.designpattern.creational.singleton.eager;
 
 public class Main {
 
     public static void main(String[] args) {
 
         DemoLogger instance1 = DemoLogger.getInstance();
-        instance1.log("Welcome to singleton design demo!");
+        instance1.logMessage("Welcome to singleton design demo!");
 
         DemoLogger instance2 = DemoLogger.getInstance();
-        instance2.log("Great Learning!");
+        instance2.logMessage("Great Learning!");
 
         boolean flag = (instance1 == instance2);
         System.out.println("Are both the instances same? " + flag);

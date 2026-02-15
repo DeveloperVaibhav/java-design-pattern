@@ -1,4 +1,4 @@
-package com.designpattern.creational.singleton;
+package com.designpattern.creational.singleton.lazy;
 
 public class DemoLogger {
 
@@ -7,7 +7,7 @@ public class DemoLogger {
 
     //private constructor to prevent external instantiation
     private DemoLogger(){
-        System.out.println("Logger is initialized...");
+        System.out.println("Logger is initialized lazy...");
     }
 
     //public method to return the single instance (with lazy initialization)
@@ -19,7 +19,7 @@ public class DemoLogger {
         return instance;
     }
 
-    public void log(String message){
+    public void logMessage(String message){
         System.out.println("LOG: "+ message);
     }
 }
