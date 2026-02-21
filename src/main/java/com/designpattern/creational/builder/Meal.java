@@ -56,7 +56,7 @@ public class Meal {
     // Static inner Builder for constructing Meal objects
     public static class Builder{
         //required field
-        private Burger burger;
+        private final Burger burger;
         //optional fields
         private Drink drink;
         private Fries fries;
